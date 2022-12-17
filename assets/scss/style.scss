@@ -4,4 +4,291 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'DM Sans';
 }
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+body{
+    background-color: #191919;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 119px;
+    
+    .header-content{
+      @include flex-between();
+        .header-logo{
+            @include flex-center();
+            height: 119px;
+            h1{
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+        nav{
+        ul{
+            @include flex-center();
+            li{
+                @include flex-center();
+                margin-left: 40px;
+                a{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    color: #fff;
+                    &:hover{
+                        color: #118DA8;
+                    }
+                }
+            }
+            .active{
+                a{
+                    color: #118DA8;
+                }
+            }
+        }
+        }
+        .menu{
+            display: none;
+            i{
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+    }
+}
+main{
+    #entry{
+        margin-bottom: 40px;
+        height: 100vh;
+        .entry-content{
+            width: 100%;
+            height: 100%;
+            @include flex-between();
+
+            .entry-content-img{
+                   background-image: url(../image/Frame.png) ; 
+                   background-size:contain;
+                   width: 650px;
+                   height: 550px;
+                   background-repeat: no-repeat;
+            }
+            .entry-content-text{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                letter-spacing: 3.2px;
+                line-height: 88px;
+                h2{
+                    font-family: 'DM Sans';
+                    font-weight: 400;
+                    font-size: 70px;  
+                    margin-bottom: 90px;  
+                    span{
+                        font-family: 'DM Sans';
+                        font-weight: 700;
+                        font-size: 80px;
+                    }
+                }
+                .social{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        font-family: 'DM Sans';
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 24px;
+                        margin-bottom: 16px;
+                    }
+                    .social-group{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        img{
+                            margin-right: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #episodes{
+        height: 100vh;
+        .episodes-content{
+            
+            width: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           border: 1px solid red;
+         .episodes-title{
+            @include flex-between();
+            width: 100%;
+            height: 80px;
+            h2{
+                font-family: 'DM Sans';
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 79px;
+                letter-spacing: 2.88px;
+                color: #FFFFFF;
+            }
+            .btn{
+                width: 178px;
+                height: 51px;
+                background-color: #118DA8;
+                border-radius: 6px;
+                @include flex-center();
+                a{
+                    color: #fff;
+                }
+            }
+         }
+         .episodes-cards{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .card-item{
+                width: 100%;
+                height: 545px;
+                background-color: #000;
+                border-radius: 32px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 60px;
+                .card-in-item{
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    .title{
+                        color: #fff;
+                        background: #191919;
+                        border-radius: 6px;
+                        width: 73px;
+                        height: 27px;
+                        @include flex-center();
+                        font-size: 18px;
+                        font-weight: 400;
+                        margin-bottom: 48px;
+                    }
+                    .title-width{
+                        width: 136px;
+                        
+                    }
+                    a{
+                        font-weight: 400;
+                        color: #118DA8;
+                        font-size: 17px;
+                        margin-bottom: 18px;
+                    }
+                    h2{
+                        font-weight: 400;
+                        font-size: 64px;
+                        color: #FFFFFF;
+                        margin-bottom: 28px;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 22px;
+                        color: rgba(255, 255, 255, 0.7);
+                        margin-bottom: 18px;
+                    }
+                    .btn{
+                        width: 208px;
+                        height: 51px;
+                        border-radius: 6px;
+                        background-color: #118DA8;
+                        @include flex-center();
+                        color: #fff;
+                        font-size: 18px;
+                    }
+                }
+            }
+           
+
+         }
+        }
+        
+    }
+}
+
+
+
+
+
+
+//responsive header
+@media screen and (max-width:768px){
+    header{
+        .container{
+            width: 100%;
+            nav{
+                display: none;
+            }
+            .menu{
+                display: block;
+            }
+        }
+    }
+}
+// responsive main section home
+@media screen and (max-width:918px){
+    main{
+        #entry{
+            .entry-content{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                .entry-content-img{
+                    width: 100%;
+                }
+                .entry-content-text{
+                    width: 100%;
+                    line-height: 30px;
+                    h2{
+                        margin-top: 10px;
+                        width: 300px;
+                        font-size: 30px;
+                        margin-bottom: 10px;
+
+                        span{
+                            font-size: 40px
+                        };
+                    }
+                }
+            }
+        }
+        #episodes{ 
+            .episodes-content{
+                width: 100%;
+                .episodes-title{
+                    h2{
+                        font-size: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+// responsive main section episodes
+
