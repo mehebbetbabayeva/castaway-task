@@ -19,6 +19,8 @@ body {
 header {
   width: 100%;
   height: 119px;
+  position: fixed;
+  background-color: #191919;
 }
 header .header-content {
   display: flex;
@@ -68,6 +70,7 @@ header .header-content .menu i {
 }
 
 main #entry {
+  padding-top: 40px;
   margin-bottom: 40px;
   height: 100vh;
 }
@@ -132,7 +135,6 @@ main #episodes .episodes-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
 main #episodes .episodes-content .episodes-title {
   display: flex;
@@ -268,5 +270,34 @@ main #episodes .episodes-content .episodes-cards .card-item .card-in-item .btn {
   main #episodes .episodes-content .episodes-title h2 {
     font-size: 30px;
     line-height: 30px;
+  }
+  main #episodes .episodes-content .episodes-cards {
+    width: 100%;
+  }
+  main #episodes .episodes-content .episodes-cards .card-item {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #episodes .episodes-content .episodes-cards .card-item img {
+    width: 80%;
+    height: 500px;
+  }
+  main #episodes .episodes-content .episodes-cards .card-item .card-in-item {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+  }
+  main #episodes .episodes-content .episodes-cards .card-item .card-in-item .title, main #episodes .episodes-content .episodes-cards .card-item .card-in-item a, main #episodes .episodes-content .episodes-cards .card-item .card-in-item h2, main #episodes .episodes-content .episodes-cards .card-item .card-in-item p {
+    margin-bottom: 15px;
+  }
+  main #episodes .episodes-content .episodes-cards .card-item .card-in-item h2 {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
