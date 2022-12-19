@@ -132,7 +132,7 @@ main{
         }
     }
     #episodes{
-        height: 100vh;
+       
         .episodes-content{
             
             width: 100%;
@@ -230,6 +230,60 @@ main{
         }
         
     }
+    #about{
+        height: 100vh;
+        margin-top: 50px;
+        .container{
+            .about-content{
+                width: 100%;
+                height: 100vh;
+                @include flex-between();
+                .about-content-title{
+                    display: flex;
+                    flex-direction: column;
+                    width: 48%;
+                    a{
+                        margin-bottom: 20px;
+                        .button{
+                            width: 112px;
+                            height: 112px;
+                            background-color: #118DA8;
+                            border-radius: 50%;
+                            @include flex-center();
+                            i{
+                                color: #fff;
+                                font-size: 50px;
+                            }
+                        }
+                    }
+                    a{
+                        color: #118DA8;
+                        font-size: 18px;
+                    }
+                    h2,p{
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+                    h2{
+                        font-size: 65px;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+                .about-content-img{
+                    width: 48%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 98%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -247,6 +301,33 @@ main{
             }
             .menu{
                 display: block;
+            }
+        }
+    }
+    main{
+        #about{
+            height: 150vh;
+            .container{
+                .about-content{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    .about-content-title{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        a,p,h2 {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .about-content-img{
+                        width: 100%;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
             }
         }
     }

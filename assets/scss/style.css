@@ -127,9 +127,6 @@ main #entry .entry-content .entry-content-text .social .social-group {
 main #entry .entry-content .entry-content-text .social .social-group img {
   margin-right: 17px;
 }
-main #episodes {
-  height: 100vh;
-}
 main #episodes .episodes-content {
   width: 100%;
   display: flex;
@@ -229,6 +226,62 @@ main #episodes .episodes-content .episodes-cards .card-item .card-in-item .btn {
   color: #fff;
   font-size: 18px;
 }
+main #about {
+  height: 100vh;
+  margin-top: 50px;
+}
+main #about .container .about-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #about .container .about-content .about-content-title {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+main #about .container .about-content .about-content-title a {
+  margin-bottom: 20px;
+}
+main #about .container .about-content .about-content-title a .button {
+  width: 112px;
+  height: 112px;
+  background-color: #118DA8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #about .container .about-content .about-content-title a .button i {
+  color: #fff;
+  font-size: 50px;
+}
+main #about .container .about-content .about-content-title a {
+  color: #118DA8;
+  font-size: 18px;
+}
+main #about .container .about-content .about-content-title h2, main #about .container .about-content .about-content-title p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+main #about .container .about-content .about-content-title h2 {
+  font-size: 65px;
+  font-weight: 400;
+}
+main #about .container .about-content .about-content-title p {
+  font-size: 22px;
+  font-weight: 400;
+}
+main #about .container .about-content .about-content-img {
+  width: 48%;
+  height: 100%;
+}
+main #about .container .about-content .about-content-img img {
+  width: 100%;
+  height: 98%;
+}
 
 @media screen and (max-width: 768px) {
   header .container {
@@ -239,6 +292,29 @@ main #episodes .episodes-content .episodes-cards .card-item .card-in-item .btn {
   }
   header .container .menu {
     display: block;
+  }
+  main #about {
+    height: 150vh;
+  }
+  main #about .container .about-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main #about .container .about-content .about-content-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  main #about .container .about-content .about-content-title a, main #about .container .about-content .about-content-title p, main #about .container .about-content .about-content-title h2 {
+    margin-bottom: 10px;
+  }
+  main #about .container .about-content .about-content-img {
+    width: 100%;
+  }
+  main #about .container .about-content .about-content-img img {
+    height: 100%;
   }
 }
 @media screen and (max-width: 918px) {
