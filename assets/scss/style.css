@@ -391,12 +391,70 @@ main #cards .container .cards-content .card-item p {
 }
 
 footer {
-  height: 100vh;
+  height: 350px;
 }
 footer .container .footer-content {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .footer-content .footer-content-center {
+  width: 100%;
+  height: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+footer .container .footer-content .footer-content-center .footer-content-title {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  height: 100%;
+}
+footer .container .footer-content .footer-content-center .footer-content-title p {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+footer .container .footer-content .footer-content-center .footer-content-title .footer-social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .container .footer-content .footer-content-center .footer-content-title .footer-social i {
+  margin-right: 10px;
+}
+footer .container .footer-content .footer-content-center .footer-nav {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+}
+footer .container .footer-content .footer-content-center .footer-nav .footer-nav-item {
+  width: 20%;
+}
+footer .container .footer-content .footer-content-center .footer-nav .footer-nav-item nav ul li a {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+}
+footer .container .footer-content .footer-content-center .footer-nav .footer-nav-item nav ul li a:hover {
+  color: #118DA8;
+}
+footer .container .footer-content .footer-content-center .footer-nav .social-group {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+footer .container .footer-content .footer-content-center .footer-nav .social-group img {
+  margin-left: 17px;
 }
 
 @media screen and (max-width: 768px) {

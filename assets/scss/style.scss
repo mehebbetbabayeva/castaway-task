@@ -386,10 +386,73 @@ main{
     }
 }
 footer{
-    height: 100vh;
+    height:350px;
     .container{
         .footer-content{
-            @include flex-between();
+            width: 100%;
+            height: 350px;
+            @include flex-center();
+            .footer-content-center{
+                width: 100%;
+                height: 160px;
+                @include flex-between();
+                .footer-content-title{
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    color: #fff;
+                    height: 100%;
+                    p{
+                        font-size: 45px;
+                        margin-bottom: 25px;
+                    }
+                    .footer-social{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .footer-nav{
+                    width: 70%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    color: #fff;
+                    .footer-nav-item{
+                        width: 20%;
+                        nav{
+                            ul{
+                                li{
+                                    a{
+                                        font-family: 'DM Sans';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 17px;
+                                        color: #fff;
+                                        &:hover{
+                                            color: #118DA8;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .social-group{
+                        width: 30%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                            img{
+                                margin-left: 17px;
+                            }
+                    }
+    
+                }
+            }
         }
     }
 }
