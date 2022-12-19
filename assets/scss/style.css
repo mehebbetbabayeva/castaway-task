@@ -356,7 +356,7 @@ main #contact .container .contact-content .contact-content-form form button {
   border-radius: 6px;
 }
 main #cards {
-  height: 100vh;
+  height: auto;
 }
 main #cards .container .cards-content {
   width: 100%;
@@ -491,8 +491,8 @@ footer .container .footer-content .footer-content-center .footer-nav .social-gro
     height: 100%;
   }
   main #contact {
-    margin-top: 50px;
-    height: 150vh;
+    margin: 50px 0;
+    height: auto;
   }
   main #contact .container .contact-content {
     display: flex;
@@ -513,6 +513,40 @@ footer .container .footer-content .footer-content-center .footer-nav .social-gro
   }
   main #contact .container .contact-content .contact-content-form form input {
     margin-bottom: 5px;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  footer .container .footer-content {
+    width: 100%;
+    height: auto;
+  }
+  footer .container .footer-content .footer-content-center {
+    width: 100%;
+    flex-direction: column;
+  }
+  footer .container .footer-content .footer-content-center .footer-content-title {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  footer .container .footer-content .footer-content-center .footer-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+  }
+  footer .container .footer-content .footer-content-center .footer-nav .footer-nav-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .container .footer-content .footer-content-center .footer-nav .footer-nav-item nav {
+    width: 100%;
+  }
+  footer .container .footer-content .footer-content-center .footer-nav .social-group {
+    width: 100%;
   }
 }
 @media screen and (max-width: 918px) {

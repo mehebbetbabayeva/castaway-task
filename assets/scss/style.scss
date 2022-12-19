@@ -348,7 +348,7 @@ main{
         }
     }
     #cards{
-        height: 100vh;
+        height: auto;
         .container{
             .cards-content{
                 width: 100%;
@@ -502,8 +502,8 @@ footer{
             }
         }
         #contact{
-            margin-top: 50px;
-            height: 150vh;
+            margin: 50px 0;
+            height:auto;
             .container{
                 .contact-content{
                     display: flex;
@@ -530,6 +530,43 @@ footer{
                 }
             }
         }
+    }
+    footer{
+        width: 100%;
+        height: auto;
+      .container{
+        .footer-content{
+            width: 100%;
+            height: auto;
+            .footer-content-center{
+             width: 100%;
+             flex-direction: column;
+             .footer-content-title{
+                width: 100%;
+                height: 200px;
+                margin-bottom: 10px;
+             }
+             .footer-nav{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 300px;
+               
+                .footer-nav-item{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    nav{
+                        width: 100%;
+                    }
+                }
+                .social-group{
+                    width: 100%;
+                }
+             }
+            }
+        }
+      }
     }
    
 }
@@ -602,6 +639,3 @@ footer{
         }
     }
 }
-
-
-
